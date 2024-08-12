@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="movie.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="formMain">
+    <form id="form">
+        <h2>Search</h2>
+        <div class="form-group"><label for="title">Title: </label><input type="text" id="name" name="title" placeholder="Enter movie title" required/><br />
+</div>
+        <div class="form-group"> <label>Type: </label> 
+            <select name="movie" id="movie">
+                <option value="movie">movie</option>
+                <option value="series">series</option>
+                <option value="episode">episode</option></select>
+        </div>
+<button type="submit">Search</button>
+    </form>
+</div>  
+    <div id="pagination"></div>
+    <div id="results"></div>
+    <div id="movie-details"></div>
+</body>
+
+</html>
